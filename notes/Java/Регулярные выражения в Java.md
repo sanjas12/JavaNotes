@@ -1,7 +1,7 @@
 ---
 tags: regex
 ---
-`\`  -  экранировние символов  
+`\`  -  экранирование символов  `("\\.")` - "."
                                                                                   Пример
 `\W`   - знаки препинания, символы не являющиеся словами `(\\w)`  
 `\w` - символы слов [a-zA-Z_0-9], кроме `\\W` 
@@ -13,8 +13,8 @@ tags: regex
 `|` -  или                                                               `("the | you")`  the или you
 	
 **Boundary matchers**
-	`^`   - начало строки
-`$`   - конец строки
+`^`   - начало строки 
+`$`   - конец строки    `("\\.$")` - строка оканчивается на "."
 `\b`  A word boundary: `(?:(?<=\w)(?=\W)|(?<=\W)(?=\w))` (the location where a non-word character abuts a word character)
 `\b{g}`A Unicode extended grapheme cluster boundary
 `\B` A non-word boundary: `[^\b]`
