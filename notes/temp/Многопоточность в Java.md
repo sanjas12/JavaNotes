@@ -44,7 +44,7 @@ tags: Java/Многопоточность
 
 Что такое [[Семафор в Java| семафор]]? Как он реализован в java?
 
-Правило [[Happens before]] и [[Java Memory Model]]
+Правило [[happens before]] и [[Java Memory Model]]
 
 Для чего нужны [[Atomic типы данных]]? Чем отличаются от volatile?
 
@@ -54,7 +54,7 @@ tags: Java/Многопоточность
 
 Что такое [[FutureTask]]?
 
-Что такое [[Deadlock]], [[Livelock]]?
+Что такое [[deadlock]], [[livelock]]?
 
 [[Фреймворк fork и join]] Для чего нужен?
 
