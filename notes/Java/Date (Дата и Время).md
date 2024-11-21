@@ -35,6 +35,8 @@ calendar.set(Calendar.MONTH, значение); // изменения фрагм
 ### 3. Time
 3. `java.time` (**начиная с Java 8**)
 
+https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/time/package-summary.html
+
 Начиная с Java 8, пакет `java.time` предоставляет современный и удобный способ работы с датами и временем. Этот API был разработан для устранения недостатков классов `Date` и `Calendar` и основан на библиотеке Joda-Time.
 
 **Основные классы `java.time`:**
