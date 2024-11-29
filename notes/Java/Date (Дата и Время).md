@@ -57,6 +57,8 @@ public class Main {
     public static void main(String[] args) {
         // Получение текущих даты и времени
         LocalDateTime now = LocalDateTime.now();
+        // Получение заданного времени
+        LocalDateTime now = LocalDate.of(2020, 9, 12)
         System.out.println("Текущие дата и время: " + now);
 
         // Форматирование даты
