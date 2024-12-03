@@ -1,5 +1,5 @@
 ## 1. Date (Устаревший)
-1. `import java.util.Date;` устаревший класс. Из документации надо использовать Calendar
+`import java.util.Date;` устаревший класс. Из документации надо использовать Calendar
 
 https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/util/Date.html
 
@@ -13,7 +13,7 @@ String str = formatter.format(my_date);
 System.out.println(str);
 ```
 ## 2. Calendar
-2. `import java.util.Calendar;`
+```import java.util.Calendar;```
 
 https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/util/Calendar.html
 
@@ -33,7 +33,7 @@ calendar.set(Calendar.MONTH, значение); // изменения фрагм
 `roll()` аналогичен методу `add()`, но любые изменения с его помощью затрагивают один параметр, остальные остаются неизменными. (если менять только месяц, не затрагивая год )
 
 ### 3. Time
-3. `java.time` (**начиная с Java 8**)
+```java.time``` (**начиная с Java 8**)
 
 https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/time/package-summary.html
 

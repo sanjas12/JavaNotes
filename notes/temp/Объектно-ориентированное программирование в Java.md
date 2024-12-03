@@ -10,6 +10,6 @@ tags: Java
 Ключевые слова:
 - [[final java|final]]
 - [[static java|static]]
-- [[super java|super]]
+- [[super|super]]
 - [[this Java|this]]
 [[Абстрактные классы]], [[Интерфейсы Java]]
