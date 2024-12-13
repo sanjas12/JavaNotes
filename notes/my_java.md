@@ -4,7 +4,10 @@ tags:
 title: Содержание
 ---
 ## Java
+- [[Массивы Java]]
+- [[String]]
 - [[StackTrace]]
+- [[]]
 - [[Исключения(exceptions)]]
 - [[Path, Files (работа с файлами)]]
 - [[URL (работа с  сетью)]]
@@ -22,9 +25,15 @@ title: Содержание
 		- [[Внутренние классы (Inner Class)]]
 	- [[Лямбда выражения]]
 		- [[Ссылка на метод (Method Reference)]]
+- Классы
+	- [[Класс Optional]]
+	- [[Класс Collectors и его методы]]
 - [[Интерфейсы Java]]
 	- [[функциональный интерфейс]]
 	- [[Comparator Java]]
 	- [[Consumer]]
 	- [[IntFunction]]
+	- [[Function]]
+- [[Stream API]]
+	- [[Методы интерфейса Stream]]
 - [[Регулярные выражения в Java]]

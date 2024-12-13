@@ -7,6 +7,7 @@ ArrayList<String> list = new ArrayList<>();
 Collections.addAll(list, "Привет", "как", "дела?");
 
 list.forEach( (s) -> System.out.println(s) );  \\ лямбда-выражение
+list.forEach(System.out::println)
 ```
 Компилятор преобразует этот код в код:
 ```java

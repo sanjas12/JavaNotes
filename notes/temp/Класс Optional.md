@@ -2,7 +2,9 @@
 tags: Java
 aliases: isNull, Nulable
 ---
+https://struchkov.dev/blog/ru/optional-in-java/
 
+Цель этого класса – просто хранить в себе объект T (ссылку на объект типа T). Ссылка на объект внутри класса `Optional<T>` может быть `null`.
 ![[Класс Optional.png]]
 **Обычно используют в DAO**
 Этот класс нужен, чтобы работать с данными и возможного их отсутствия (null).
