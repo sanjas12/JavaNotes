@@ -1,6 +1,8 @@
 ---
 tags: Java/Stream
 ---
+https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/util/stream/Collectors.html#method-summary
+
 [Fetching Title#jg4z](https://www.youtube.com/watch?v=HOQpQWK9u28)
 Реализации интерфейса Collector, реализующие различные полезные операции редукции, такие как накопление элементов в коллекции, суммирование элементов по различным критериям и т. д. Методы этого класса значительно упрощают использование аккумулирующих терминальных методов. Рассмотрим методы по группам.
 
@@ -17,6 +19,13 @@ tags: Java/Stream
 
 
 ![[Пример сбора в Map.png]]
+## Преобразование потока в строку
+```java
+ArrayList<String> list = new ArrayList<String>();
+Collections.addAll(list, "a=2", "b=3", "c=4", "d==3");
+String result = list.stream().collect( Collectors.joining(", ") );
+```
+
 
 ## Методы для группировки данных в Map
 ![[Методы для группировки данных в Map.png]]
