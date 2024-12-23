@@ -6,9 +6,10 @@ https://www.youtube.com/watch?v=AG_7wWFBquQ&list=PLsyeobzWxl7oa1WO9n4cP3OY9nOtUc
 
 Интерфейсы определяют некоторый **функционал**, не имеющий конкретной **реализации**, который затем реализуют классы, применяющие эти интерфейсы. Один класс может имплементировать(`implements`) множество интерфейсов.
 
-**У интерфейса нет конструктора**
+> [!NOTE]
+> **У интерфейса нет конструктора**
 
-## Методы и переменные (константы)
+## Методы
 
 **Интерфейс — набор абстрактных методов и статических констант.**
 
@@ -64,36 +65,34 @@ public interface MyInterface {
 }
 
 ```
-Кроме методов в интерфейсах могут быть определены статические константы. Хотя такие константы также не имеют модификаторов, но по умолчанию они имеют модификатор доступа public static final, и поэтому их значение доступно из любого места программы.
 
-### Implements
+> [!NOTE]
+> Кроме методов в интерфейсах могут быть определены статические константы. Хотя такие константы также не имеют модификаторов, но по умолчанию они имеют модификатор доступа ==public static final==, и поэтому их значение доступно из любого места программы.
+
+### Implements интерфейсов
 Чтобы класс применил интерфейс, надо использовать ключевое слово **implements**:
 ```java
 public class Program{
-      
-    public static void main(String[] args) {
-             
+     public static void main(String[] args) {
         Book b1 = new Book("Java. Complete Referense.", "H. Shildt");
         b1.print();
     }
 }
+
 interface Printable{
- 
-    void print();
+     void print();
 }
+
 class Book implements Printable{
-  
     String name;
     String author;
   
     Book(String name, String author){
-          
         this.name = name;
         this.author = author;
     }
       
     public void print() {
-      
         System.out.printf("%s (%s) \n", name, author);
     }
 }
@@ -101,23 +100,23 @@ class Book implements Printable{
 
 В данном случае класс **Book** реализует интерфейс **Printable**. При этом надо учитывать, что если класс применяет интерфейс, то он **должен реализовать все методы интерфейса**, как в случае выше реализован метод print. Потом в методе main мы можем создать объект класса **Book** и вызвать его метод **print**. Если класс не реализует какие-то методы интерфейса, то такой класс должен быть определен как абстрактный, а его неабстрактные классы-наследники затем должны будут реализовать эти методы.
 
-**Нельзя напрямую создавать объекты интерфейсов**
+> [!NOTE]
+> **Нельзя напрямую создавать объекты интерфейсов**
 
 Одним из преимуществ использования интерфейсов является то, что они позволяют добавить в приложение гибкости. Например, в дополнение к классу **Book** определим еще один класс, который будет реализовывать интерфейс **Printable**:
 
 ```java
 class Journal implements Printable {
- 
     private String name;
   
-    String getName(){
+	String getName(){
         return name;
     }
   
     Journal(String name){
-          
-        this.name = name;
+		this.name = name;
     }
+    
     public void print() {
         System.out.println(name);
     }  
@@ -174,8 +173,32 @@ class Journal implements Printable {
 }
 ```
 
-## Особенности
-Поля могут быть только public static final
+## Поля или константы
+Интерфейсы могут содержать поля, так же как и обычные классы, но с несколькими отличиями: 
+- Поля должны быть проинициализированы 
+- Поля считаются публичными статическими финальными 
+- Модификаторы public, static и final не нужно указывать явно (они «проставляются» по умолчанию)
+==Поля могут быть только public static final подразумевает, что переменной обязательно должно быть присвоено значение во время инициализации== 
+
+```java
+interface MyInterface { 
+	int MY_CONSTANT = 10; // Это поле является public static final 
+	int Number;           // Ошиька компиляции
+	void test();
+}
+
+public class MyClass implements MyInterface {
+	public static void main(String[] args) {
+	// Обращение к полю интерфейса
+	System.out.println(MyInterface.MY_CONSTANT);
+	} 
+
+	public void test(){
+		return MyInterface.MY_CONSTANT;
+	}
+	
+}
+```
 
 Интерфейс служит для объявления контракта объекта по отношению к внешнему миру
 
