@@ -30,6 +30,7 @@ title: Содержание
 	- [[Вложенные классы]]
 		- [[Внутренние классы (Inner Class)]]
 	- [[Лямбда выражения]]
+	- [[Upcasting и Downcasting]]
 		- [[Ссылка на метод (Method Reference)]]
 - Классы
 	- [[Класс Optional]]
