@@ -27,7 +27,7 @@
 - [Java Core](Java%20Core.md)
     - [Классы Java](Классы%20Java.md)
     - [Collection](Collection.md)
-    - [Обобщения generics](Обобщения%20generics.md)
+    - [Generics (Обобщения)](Generics%20(Обобщения).md)
         - [Принцип PECS](notes/Принцип%20PECS.md)
     - [Stream API](Stream%20API.md)
     - [Клонирование](Клонирование.md)
