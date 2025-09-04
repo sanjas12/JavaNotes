@@ -15,5 +15,8 @@
 `git merge feature-branch
 
 
-
-`git checkout main && git merge feature-branch --no-commit` 
+```bash
+git checkout main && git merge feature-branch --squash  --no-commit
+git add .
+git commit -m "Сообщение для нового коммита" 
+```
