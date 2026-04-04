@@ -6,7 +6,7 @@ C:\Users\sanja\AppData\Local\Microsoft\WindowsApps\python.exe
 ```
 показывает все установлненные python в системе
 
-```
+``` bash
 # Показать путь к Python
 which python
 
