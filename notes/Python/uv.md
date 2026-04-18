@@ -23,6 +23,12 @@ pip install uv --upgrade # обновление
 
 После установки проверьте: `uv --version`.
 
+Добавление в bash auto дополнений
+
+```bash
+echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
+```
+
 ## 2. Создание виртуального окружения
 
 В отличие от `python -m venv`, `uv` делает это мгновенно.
