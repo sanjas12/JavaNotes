@@ -29,7 +29,13 @@ pip download -r requirements.txt -d f:/temp/python_Library
 ls -la f:/temp/python_Library/
 
 # 4. Дополнительно: скачать с конкретной платформой (если нужно)
-pip download -r requirements.txt -d f:/temp/python_Library \
+pip download -r requirements.txt -d d:/temp/python_Library \
+    --platform win_amd64 \
+    --python-version 3.8 \
+    --no-deps
+
+# или конкретную библиотеку
+pip download "contourpy>=1.0.7,<1.2.0" -d d:/temp/python_Library \
     --platform win_amd64 \
     --python-version 3.8 \
     --no-deps
