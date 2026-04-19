@@ -149,6 +149,8 @@ uv pip tree
 
 # 3. Сохранить список в файл
 uv pip freeze > requirements.txt
+uv run pip freeze > requirements.txt
+uv pip freeze --python .venv > requirements.txt
 
 # 4. Найти, какой пакет тянет проблемную зависимость
 uv pip tree --reverse | grep problematic-package
