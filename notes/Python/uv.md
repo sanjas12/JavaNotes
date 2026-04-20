@@ -91,6 +91,7 @@ cd my_project
 ### Добавление зависимости:
 ```bash
 uv add requests
+uv add -r requirements.txt
 ```
 Что произойдет:
 1. Добавит `requests` в `pyproject.toml`
