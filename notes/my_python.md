@@ -9,12 +9,12 @@
 [[uv pip]]
 [[uv sync]]
 [[lock-файл]]
+[[uv export]]
 
 ## Pip
 [[pip]]
 [[Подсчет количества библиотек]]
 [[обновление пакета через pip]]
-[[Создание req.txt]]
 [[pip cache]]
 [[pip download]]
 
